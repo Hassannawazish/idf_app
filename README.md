@@ -9,3 +9,9 @@ Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/lates
 Unless required by applicable law or agreed to in writing, this
 software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.*
+
+
+Library Used 
+====================
+
+nvs_flash , deals with NVS (Non-Volatile Storage). It used to store configuration data, Wi-Fi credentials, calibration values, etc., so they persist even after a reset or power loss.

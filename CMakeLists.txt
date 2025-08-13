@@ -1,11 +1,6 @@
-# See the build system documentation in IDF programming guide
-# for more information about component CMakeLists.txt files.
+# The following lines of boilerplate have to be in your project's
+# CMakeLists in this exact order for cmake to work correctly
+cmake_minimum_required(VERSION 3.5)
 
-idf_component_register(
-    SRCS main.c rgb_led.c wifi_app.c http_server.c
-    INCLUDE_DIRS        # optional, add here public include directories
-    PRIV_INCLUDE_DIRS   # optional, add here private include directories
-    REQUIRES            # optional, list the public requirements (component names)
-    PRIV_REQUIRES       # optional, list the private requirements
-    EMBED_FILES webpage/index.html webpage/app.css webpage/app.js webpage/favicon.ico webpage/jquery-3.3.1.min.js
-)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(app-template)
